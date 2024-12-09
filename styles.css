@@ -129,3 +129,17 @@ h1 {
     text-align: center;
     
 }
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.current-time, .total-time {
+    font-size: 14px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    cursor: pointer;
+}
