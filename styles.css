@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+
+}
+
+.title {
+    font-size: 2.5em;
+    color: #2be0e0;
+    text-shadow: 0 0 10px #178b8b;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+.beats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.beat-item {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.beat-item:hover {
+    transform: scale(1.05);
+
+}
+
+.description {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #ddd;
+}
+
+.buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28ceda;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; transform: 0.2s;
+}
+
+.buy-button:hover {
+    background-color: #086d57;
+    transform: translateY(-3px);
+}
+.play-button {
+    font-size: 1.5em;
+    padding: 16px;
+    margin: 15px;
+    color: #fff;
+    background-color: #444;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .play-button:hover {
+    background-color: #666;
+    transform: scale(1.1);
+  }
+
+  .debajo {
+    text-align: center;
+    display: flex;
+    margin: 1;
+    color: #696969;
+    background-color: #111;
+    margin-bottom: 50px;
+    border-width: 6cm;
+    padding: 30px;
+
+  }
+
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+}
+.ref {
+    align-self: auto;
+    margin: 0;
+    padding: 1;
+    color: white;
+}
+h1 {
+    text-align: center;
+    
+}
