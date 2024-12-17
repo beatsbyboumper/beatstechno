@@ -3,21 +3,31 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #111;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 h1, h2, p {
     margin: 0;
 }
 
-.header {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-
+@keyframes brillo {
+    0% {
+        text-shadow: 0 0 5px #178383, 0 0 10px #1b8585, 0 0 15px #1c8b8b, 0 0 20px #178b8b, 0 0 30px #178b8b;
+    }
+    50% {
+        text-shadow: 0 0 20px #259494, 0 0 30px #1f9494, 0 0 40px #218b8b, 0 0 50px #178b8b, 0 0 60px #178b8b;
+    }
+    100% {
+        text-shadow: 0 0 5px #238383, 0 0 10px #238d8d, 0 0 15px #228a8a, 0 0 20px #178b8b, 0 0 30px #178b8b;
+    }
 }
 
+.titulo {
+    color: #2be0e0;
+    font-size: 2.5em;
+    animation: brillo 1.5s infinite alternate;
+}
 .title {
     font-size: 2.5em;
     color: #2be0e0;
@@ -85,9 +95,9 @@ h1, h2, p {
     padding: 16px;
     margin: 15px;
     color: #fff;
-    background-color: #444;
+    background-color: #222;
     border: none;
-    border-radius: 21px;
+    border-radius: 100px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
   }
@@ -125,7 +135,7 @@ h1, h2, p {
     padding: 1;
     color: white;
 }
-h2 {
+h1 {
     text-align: center;
     
 }
@@ -142,4 +152,18 @@ h2 {
 .progress-bar {
     flex-grow: 1;
     cursor: pointer;
+}
+
+.img {
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    padding: 20px; /* Espacio alrededor del logo */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.img img {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que no tenga márgenes adicionales */
 }
